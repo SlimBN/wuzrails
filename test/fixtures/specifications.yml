@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  value_name: 
+  shown_value: 
+  ref_value: 
+  component_id: 
+  model_date: 2013-02-09
+  predecessor_id: 
+
+two:
+  value_name: 
+  shown_value: 
+  ref_value: 
+  component_id: 
+  model_date: 2013-02-09
+  predecessor_id: 

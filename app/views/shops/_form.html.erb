@@ -1,0 +1,53 @@
+<%= form_for(@shop) do |f| %>
+  <% if @shop.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@shop.errors.count, "error") %> prohibited this shop from being saved:</h2>
+
+      <ul>
+      <% @shop.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :long_desc %><br />
+    <%= f.text_area :long_desc %>
+  </div>
+  <div class="field">
+    <%= f.label :coord_lat,coord_long %><br />
+    <%= f.text_field :coord_lat,coord_long %>
+  </div>
+  <div class="field">
+    <%= f.label :main_shop_id %><br />
+    <%= f.text_field :main_shop_id %>
+  </div>
+  <div class="field">
+    <%= f.label :web,contact_phone,contact_fax,contact_email %><br />
+    <%= f.text_field :web,contact_phone,contact_fax,contact_email %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %><br />
+    <%= f.text_field :user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :slug %><br />
+    <%= f.text_field :slug %>
+  </div>
+  <div class="field">
+    <%= f.label :state_id %><br />
+    <%= f.text_field :state_id %>
+  </div>
+  <div class="field">
+    <%= f.label :city_id %><br />
+    <%= f.text_field :city_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

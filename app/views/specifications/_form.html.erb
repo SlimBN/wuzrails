@@ -1,0 +1,41 @@
+<%= form_for(@specification) do |f| %>
+  <% if @specification.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@specification.errors.count, "error") %> prohibited this specification from being saved:</h2>
+
+      <ul>
+      <% @specification.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :value_name %><br />
+    <%= f.text_field :value_name %>
+  </div>
+  <div class="field">
+    <%= f.label :shown_value %><br />
+    <%= f.text_field :shown_value %>
+  </div>
+  <div class="field">
+    <%= f.label :ref_value %><br />
+    <%= f.text_field :ref_value %>
+  </div>
+  <div class="field">
+    <%= f.label :component_id %><br />
+    <%= f.text_field :component_id %>
+  </div>
+  <div class="field">
+    <%= f.label :model_date %><br />
+    <%= f.date_select :model_date %>
+  </div>
+  <div class="field">
+    <%= f.label :predecessor_id %><br />
+    <%= f.text_field :predecessor_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

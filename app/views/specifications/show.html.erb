@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Value name:</b>
+  <%= @specification.value_name %>
+</p>
+
+<p>
+  <b>Shown value:</b>
+  <%= @specification.shown_value %>
+</p>
+
+<p>
+  <b>Ref value:</b>
+  <%= @specification.ref_value %>
+</p>
+
+<p>
+  <b>Component:</b>
+  <%= @specification.component_id %>
+</p>
+
+<p>
+  <b>Model date:</b>
+  <%= @specification.model_date %>
+</p>
+
+<p>
+  <b>Predecessor:</b>
+  <%= @specification.predecessor_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_specification_path(@specification) %> |
+<%= link_to 'Back', specifications_path %>

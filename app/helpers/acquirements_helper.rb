@@ -1,0 +1,2 @@
+module AcquirementsHelper
+end

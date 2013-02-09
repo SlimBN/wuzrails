@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  value,comparaison_id,user_id,product_id,specification_id,post_id: 
+  created_at,updated_at: 2013-02-09 11:06:10
+
+two:
+  value,comparaison_id,user_id,product_id,specification_id,post_id: 
+  created_at,updated_at: 2013-02-09 11:06:10

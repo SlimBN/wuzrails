@@ -1,0 +1,33 @@
+<h1>Listing specifications</h1>
+
+<table>
+  <tr>
+    <th>Value name</th>
+    <th>Shown value</th>
+    <th>Ref value</th>
+    <th>Component</th>
+    <th>Model date</th>
+    <th>Predecessor</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @specifications.each do |specification| %>
+  <tr>
+    <td><%= specification.value_name %></td>
+    <td><%= specification.shown_value %></td>
+    <td><%= specification.ref_value %></td>
+    <td><%= specification.component_id %></td>
+    <td><%= specification.model_date %></td>
+    <td><%= specification.predecessor_id %></td>
+    <td><%= link_to 'Show', specification %></td>
+    <td><%= link_to 'Edit', edit_specification_path(specification) %></td>
+    <td><%= link_to 'Destroy', specification, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Specification', new_specification_path %>

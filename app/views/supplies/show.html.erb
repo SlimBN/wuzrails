@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Supply count:</b>
+  <%= @supply.supply_count %>
+</p>
+
+<p>
+  <b>Created at:</b>
+  <%= @supply.created_at %>
+</p>
+
+<p>
+  <b>Updated at:</b>
+  <%= @supply.updated_at %>
+</p>
+
+<p>
+  <b>Product:</b>
+  <%= @supply.product_id %>
+</p>
+
+<p>
+  <b>Shop:</b>
+  <%= @supply.shop_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_supply_path(@supply) %> |
+<%= link_to 'Back', supplies_path %>

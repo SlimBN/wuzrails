@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Value,comparaison id,user id,product id,specification id,post:</b>
+  <%= @vote.value,comparaison_id,user_id,product_id,specification_id,post_id %>
+</p>
+
+<p>
+  <b>Created at,updated at:</b>
+  <%= @vote.created_at,updated_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_vote_path(@vote) %> |
+<%= link_to 'Back', votes_path %>

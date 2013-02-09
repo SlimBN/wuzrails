@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Purchased at:</b>
+  <%= @acquirement.purchased_at %>
+</p>
+
+<p>
+  <b>Created at:</b>
+  <%= @acquirement.created_at %>
+</p>
+
+<p>
+  <b>Updated at:</b>
+  <%= @acquirement.updated_at %>
+</p>
+
+<p>
+  <b>Shop:</b>
+  <%= @acquirement.shop_id %>
+</p>
+
+<p>
+  <b>Manufacturer:</b>
+  <%= @acquirement.manufacturer_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_acquirement_path(@acquirement) %> |
+<%= link_to 'Back', acquirements_path %>

@@ -1,0 +1,31 @@
+<h1>Listing acquirements</h1>
+
+<table>
+  <tr>
+    <th>Purchased at</th>
+    <th>Created at</th>
+    <th>Updated at</th>
+    <th>Shop</th>
+    <th>Manufacturer</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @acquirements.each do |acquirement| %>
+  <tr>
+    <td><%= acquirement.purchased_at %></td>
+    <td><%= acquirement.created_at %></td>
+    <td><%= acquirement.updated_at %></td>
+    <td><%= acquirement.shop_id %></td>
+    <td><%= acquirement.manufacturer_id %></td>
+    <td><%= link_to 'Show', acquirement %></td>
+    <td><%= link_to 'Edit', edit_acquirement_path(acquirement) %></td>
+    <td><%= link_to 'Destroy', acquirement, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Acquirement', new_acquirement_path %>

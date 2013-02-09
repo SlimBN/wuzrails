@@ -1,0 +1,51 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: 
+  adress: 
+  hq_lat: 
+  hq_long: 
+  web: 
+  longdesc: MyText
+  founded_at: 2013-02-09
+  closed_at: 2013-02-09
+  created_at: 2013-02-09 10:43:02
+  updated_at: 2013-02-09 10:43:02
+  contact_phone: 
+  contact_fax: 
+  contact_email: 
+  owner_id: 
+  cover_id: 
+  user_id: 
+  country_id: 
+  slug: 
+  stock_ref: 
+  stock_value: 1.5
+  city_id: 
+  state_id: 
+  stock_dir: 
+
+two:
+  name: 
+  adress: 
+  hq_lat: 
+  hq_long: 
+  web: 
+  longdesc: MyText
+  founded_at: 2013-02-09
+  closed_at: 2013-02-09
+  created_at: 2013-02-09 10:43:02
+  updated_at: 2013-02-09 10:43:02
+  contact_phone: 
+  contact_fax: 
+  contact_email: 
+  owner_id: 
+  cover_id: 
+  user_id: 
+  country_id: 
+  slug: 
+  stock_ref: 
+  stock_value: 1.5
+  city_id: 
+  state_id: 
+  stock_dir: 
