@@ -1,0 +1,31 @@
+<h1>Listing prices</h1>
+
+<table>
+  <tr>
+    <th>Amount</th>
+    <th>Created at</th>
+    <th>Available until</th>
+    <th>Is limited</th>
+    <th>Manufacturer id,currency</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @prices.each do |price| %>
+  <tr>
+    <td><%= price.amount %></td>
+    <td><%= price.created_at %></td>
+    <td><%= price.available_until %></td>
+    <td><%= price.is_limited %></td>
+    <td><%= price.manufacturer_id,currency_id %></td>
+    <td><%= link_to 'Show', price %></td>
+    <td><%= link_to 'Edit', edit_price_path(price) %></td>
+    <td><%= link_to 'Destroy', price, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Price', new_price_path %>

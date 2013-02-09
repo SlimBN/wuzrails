@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Is in favor:</b>
+  <%= @simple_vote.is_in_favor %>
+</p>
+
+<p>
+  <b>Created at:</b>
+  <%= @simple_vote.created_at %>
+</p>
+
+<p>
+  <b>Answer id,shop id,manufacturer id,comment id,product:</b>
+  <%= @simple_vote.answer_id,shop_id,manufacturer_id,comment_id,product_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_simple_vote_path(@simple_vote) %> |
+<%= link_to 'Back', simple_votes_path %>

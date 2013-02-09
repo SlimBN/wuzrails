@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  amount: 
+  created_at: 2013-02-09 11:22:31
+  available_until: 2013-02-09
+  is_limited: false
+  manufacturer_id,currency_id: 
+
+two:
+  amount: 
+  created_at: 2013-02-09 11:22:31
+  available_until: 2013-02-09
+  is_limited: false
+  manufacturer_id,currency_id: 

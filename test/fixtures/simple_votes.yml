@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  is_in_favor: false
+  created_at: 2013-02-09 11:24:54
+  answer_id,shop_id,manufacturer_id,comment_id,product_id: 
+
+two:
+  is_in_favor: false
+  created_at: 2013-02-09 11:24:54
+  answer_id,shop_id,manufacturer_id,comment_id,product_id: 

@@ -1,4 +1,16 @@
 Wuzrails::Application.routes.draw do
+  resources :simple_votes
+
+
+  resources :prices
+
+
+  resources :comparaisons
+
+
+  resources :comments
+
+
   resources :votes
 
 

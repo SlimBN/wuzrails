@@ -1,0 +1,29 @@
+<%= form_for(@simple_vote) do |f| %>
+  <% if @simple_vote.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@simple_vote.errors.count, "error") %> prohibited this simple_vote from being saved:</h2>
+
+      <ul>
+      <% @simple_vote.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :is_in_favor %><br />
+    <%= f.check_box :is_in_favor %>
+  </div>
+  <div class="field">
+    <%= f.label :created_at %><br />
+    <%= f.datetime_select :created_at %>
+  </div>
+  <div class="field">
+    <%= f.label :answer_id,shop_id,manufacturer_id,comment_id,product_id %><br />
+    <%= f.text_field :answer_id,shop_id,manufacturer_id,comment_id,product_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

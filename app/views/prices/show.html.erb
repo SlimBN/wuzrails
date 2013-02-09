@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Amount:</b>
+  <%= @price.amount %>
+</p>
+
+<p>
+  <b>Created at:</b>
+  <%= @price.created_at %>
+</p>
+
+<p>
+  <b>Available until:</b>
+  <%= @price.available_until %>
+</p>
+
+<p>
+  <b>Is limited:</b>
+  <%= @price.is_limited %>
+</p>
+
+<p>
+  <b>Manufacturer id,currency:</b>
+  <%= @price.manufacturer_id,currency_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_price_path(@price) %> |
+<%= link_to 'Back', prices_path %>

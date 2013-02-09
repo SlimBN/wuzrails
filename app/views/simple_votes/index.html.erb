@@ -1,0 +1,27 @@
+<h1>Listing simple_votes</h1>
+
+<table>
+  <tr>
+    <th>Is in favor</th>
+    <th>Created at</th>
+    <th>Answer id,shop id,manufacturer id,comment id,product</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @simple_votes.each do |simple_vote| %>
+  <tr>
+    <td><%= simple_vote.is_in_favor %></td>
+    <td><%= simple_vote.created_at %></td>
+    <td><%= simple_vote.answer_id,shop_id,manufacturer_id,comment_id,product_id %></td>
+    <td><%= link_to 'Show', simple_vote %></td>
+    <td><%= link_to 'Edit', edit_simple_vote_path(simple_vote) %></td>
+    <td><%= link_to 'Destroy', simple_vote, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Simple vote', new_simple_vote_path %>
